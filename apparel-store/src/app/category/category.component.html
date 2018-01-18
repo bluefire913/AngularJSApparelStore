@@ -1,0 +1,20 @@
+  <div class="jumbotron">
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark"  *ngFor="let category of categories">
+  <!-- <a class="navbar-brand" href="#">{{category.name}}</a> -->
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown col-md-3" *ngFor="let submenu of category.subcategory">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <p> {{submenu.name}} </p>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#" *ngFor="let subsubmenu of submenu.subcategory"><p>{{subsubmenu.name}}</p></a>
+                </div>
+        </li>
+
+</ul>
+</div>
+</nav>
+</div>
