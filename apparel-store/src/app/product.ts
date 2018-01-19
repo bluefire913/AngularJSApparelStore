@@ -5,4 +5,6 @@ export class Product {
     image_small:string;
     image_list:string;
     price:string;
+    orginal_price:string;
+    discount:number;
 }

@@ -24,7 +24,7 @@ export class CateogryService {
                              {
                                 code:"1",
                                 name:"Shirt",
-                                url : "c/men/shirt",
+                                url : "c/men-shirt",
                                 subcategory :[]
 
                         },

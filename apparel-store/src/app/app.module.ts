@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CateogryService } from './cateogry.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { CategorylistcomponentComponent } from './categorylistcomponent/categorylistcomponent.component'
+import { ProductlistingService } from './productlisting.service'
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { CategorylistcomponentComponent } from './categorylistcomponent/category
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CateogryService],
+  providers: [CateogryService,ProductlistingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

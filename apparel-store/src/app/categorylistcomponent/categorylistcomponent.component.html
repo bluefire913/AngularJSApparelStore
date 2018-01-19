@@ -1,3 +1,18 @@
-<p>
-  categorylistcomponent works!
-</p>
+<div class="row">
+    <div class="col-md-4">
+    </div>
+
+<div class="col-md-8">
+<div class="nav-item dropdown col-md-6" *ngFor="let product of products">
+
+     <img [src]="getImagePath(product)" alt="image" class="img-responsive" width="250px"/>
+    <p class="text-center text-warning">{{product.name}}</p>
+        <p class="text-center text-info">{{product.description}}</p>
+    <p class="text-center">   {{product.price}}</p>
+
+    <p class="text-center"> <s>{{product.orginal_price}}</s>  <span class="text-warning">({{product.discount}}%)</span></p>
+
+
+</div>
+</div>
+</div>

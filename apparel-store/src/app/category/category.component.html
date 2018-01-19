@@ -10,7 +10,7 @@
                 <p> {{submenu.name}} </p>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#" *ngFor="let subsubmenu of submenu.subcategory"><p>{{subsubmenu.name}}</p></a>
+                  <a class="dropdown-item" href="#" *ngFor="let subsubmenu of submenu.subcategory" routerLink="{{subsubmenu.url}}"><p>{{subsubmenu.name}}</p></a>
                 </div>
         </li>
 

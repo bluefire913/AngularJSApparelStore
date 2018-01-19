@@ -13,9 +13,14 @@ export class CategorylistcomponentComponent implements OnInit {
   constructor(private productService:ProductlistingService,  private route: ActivatedRoute) { }
   getCategories(){
       const id = this.route.snapshot.paramMap.get('id');
-      this.productService.getProductsForCategory(id);
+      console.log("hi");
+     this.products= this.productService.getProductsForCategory(id);
+  }
+  getImagePath(product:Product):String{
+      return product.image_list;
   }
   ngOnInit() {
+      this.getCategories();
   }
 
 }
