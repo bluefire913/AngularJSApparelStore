@@ -7,7 +7,9 @@ import { CategoryComponent } from './category/category.component';
 import { HomepageBannerMainComponent } from './homepage-banner-main/homepage-banner-main.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CateogryService } from './cateogry.service'
+import { CateogryService } from './cateogry.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { CategorylistcomponentComponent } from './categorylistcomponent/categorylistcomponent.component'
 
 
 @NgModule({
@@ -16,10 +18,12 @@ import { CateogryService } from './cateogry.service'
     CategoryComponent,
     HomepageBannerMainComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CategorylistcomponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [CateogryService],
   bootstrap: [AppComponent]
